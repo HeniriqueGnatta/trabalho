@@ -2,8 +2,8 @@
 * Autor: [Henrique Gnatta]
 * Linguagem: [Java]
 * Data: [10/12/2024]
-* Descrição: [calculo de temperatura]
-* Funcionalidades: []
+* Descrição: [utilizei switch variaveis operadores]
+* Funcionalidades: [trasformar a temperatura de celsius em kalvins e fahrenheit]
 * Versão: [1.0]
 */
 
