@@ -1,0 +1,48 @@
+version = 1
+requires-python = ">=3.11"
+resolution-markers = [
+    "python_full_version < '3.12'",
+    "python_full_version >= '3.12'",
+]
+
+[[package]]
+name = "gentools"
+version = "1.2.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/21/4d/68ba01cf9e6da4d024c13684d97206346e9ba11ad470516104e1cd13d857/gentools-1.2.2.tar.gz", hash = "sha256:c692af51d5a8f7f3406ed8c39d6da686f4f2fe4dbfaa13ddb24035b0471d9305", size = 6702 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/14/12/e495615dc5e47c2ad40768c661fdd70e9863cd6aec9d6aac07c2888d6fd8/gentools-1.2.2-py3-none-any.whl", hash = "sha256:75b7b0452691115ad11914e17c8c2b5f9b146b01f20167785e8b6d99b565d190", size = 9045 },
+]
+
+[[package]]
+name = "python-template"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "quiz" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "quiz", specifier = ">=0.3.2" }]
+
+[[package]]
+name = "quiz"
+version = "0.3.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "gentools" },
+    { name = "snug" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5e/73/abbfd74a332c0ce66b948494d12f74a03036e093f245f82e98bca2a4ca76/quiz-0.3.2.tar.gz", hash = "sha256:c4e858e7ea4ee269d22210d0b5f0203847a475e687d4f5d81bcc6f0c1b713cce", size = 24286 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1f/99/b0ee3b910778b8f87e76f7d1c3785e866186fbf49c91ab6960a56359e474/quiz-0.3.2-py3-none-any.whl", hash = "sha256:d4d58c1ac196450e263a1e6a644ce2410cf6cdaa94982f19d936f3d4484eb6e3", size = 27414 },
+]
+
+[[package]]
+name = "snug"
+version = "2.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/29/30/8d8d4ad1e097888e4fc910d22c697dfc0c4d28d7a9cfdea0eb9c6b8eca23/snug-2.4.0.tar.gz", hash = "sha256:771822da26a2e2cd4154a6e0358c3b2fda8c269925517158d83a3dbb9b913194", size = 17021 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8b/c4/6571c03b23c6a2e65fe16992e67e082f0631d7ed4ed9fc697f8452d051f6/snug-2.4.0-py3-none-any.whl", hash = "sha256:a5944a0ec113e7e1c8093b7ad6f534feee35647bece1b44620f2f27c578f91a8", size = 18036 },
+]
